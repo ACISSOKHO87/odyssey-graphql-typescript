@@ -20,9 +20,24 @@ This repo is _not regularly monitored_.
 
 For any issues or problems concerning the course content, please refer to the [Odyssey topic in our community forums](https://community.apollographql.com/tags/c/help/6/odyssey). You can also [join the Apollo Discord](https://discord.gg/graphos).
 
-
 ## Reference documentation
 
 For further reference, please consider the following sections:
 
-* [Official TypeScript documentation](https://www.typescriptlang.org/docs/)
+-   [Official TypeScript documentation](https://www.typescriptlang.org/docs/)
+
+## Adding server dependencies
+
+To get started with our server, we'll need a couple packages first: @apollo/server, graphql and graphql-tag.
+
+-   The @apollo/server package provides a full-fledged, spec-compliant GraphQL server.
+-   The graphql package provides the core logic for parsing and validating GraphQL queries.
+-   The graphql-tag package provides the gql template literal that we'll use in a moment.
+
+In a new terminal in the root of the project, run the following:
+
+```
+npm install @apollo/server graphql graphql-tag
+```
+
+These packages are responsible for all of the GraphQL wiring we'll need to get our project up and running.
